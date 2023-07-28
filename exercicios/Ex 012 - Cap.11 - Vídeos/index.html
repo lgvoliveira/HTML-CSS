@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <!-- Esse método pode deixar o consumo de banda muito alto em um site que for muito acessado, uma vez que consome meu próprio serviço de hospedagem -->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está hospedado no meu próprio servidor</p>
+        <video width="450" controls poster="imagens/cidade001.png">
+            <source src="midia/meu-video001.mp4" type="video/mp4">
+            <source src="midia/meu-video002.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeo</p>
+        </video> 
+    
+        <!-- Esse método a seguir não consume dados do meu servidor, mas sim dados do site de onde eu tirei o vídeo, portanto é melhor para o site -->
+
+    <h1>Inserindo vídeos do Youtube</h1> 
+        <p>Para fazer isso é só ir em <strong>"Compartilhar" -> "Incorporar" -> "Copiar"</strong></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeo com <a href="https://vimeo.com" target="_blank">Vimeo</a></h1> <!-- O vimeo tem uma qualidade superior, porém seus vídeos acabam ficando mais pesados. Além disso eu posso restringir quem pode assistir meus vídeos nele, enquanto no Youtube meus vídeos ficam abertos para todo mundo -->
+        <iframe src="https://player.vimeo.com/video/351640689?h=ea4f76dc4f&portrait=0" width="560" height="327" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

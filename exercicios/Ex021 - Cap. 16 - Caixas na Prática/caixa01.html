@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <!-- Posso tranformar os box-level ou inline-level, usando display: block /inline / inline-block -->
+    <style>
+        h1 { /*" Box-level " -> display: block; */ 
+            height: 300px;
+            width: 300px;
+            background-color: lightgray;
+
+            border: 10px solid darkslategray;
+
+            /*  SHORTHAND
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            */
+            
+            padding: 10px 10px 10px 10px; /* Se eu colocaar apenas dois valores, ele une o " de cima e o de baixo ", e o " da direita e o da esquerda " */
+            
+            /*  SHORTHAND
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+
+            margin: 20px auto 40px auto;
+
+            /*  SHORTHAND
+            margin-top: 20px;
+            margin-right: auto;
+            margin-bottom: 40px;
+            margin-left: auto;
+            */
+
+            outline: 5px dashed salmon;
+
+            /*  SHORTHAND
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+        }
+
+        a { /* " Inline-level " -> display: inline; */
+            border: 10px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de caixas box-level, mas os <a href="#">links são exemplo exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

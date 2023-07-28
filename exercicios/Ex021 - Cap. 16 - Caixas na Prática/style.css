@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px 0px; /* Assimila as diagonais */
+}
+
+h1 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Sombra do tipo " Inset " ou " Outset" -> Outset não precisa escrever */
+}
+
+nav {
+    background-color: darkslategray;
+    padding: 3px;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.61); /* Desloc. Horz. / Desloc. Vert. / Embaçamento / Espalhamento / Sombra */
+}
+
+nav > a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 10px 20px 20px; /* Top-Left / Top-Right / Bottom-Right / Bottom-Left */
+    box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+article {
+    background-color: lightgray;
+}
+
+article > aside {
+    background-color: darkgray;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+div#bola {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px 0px 0px 10px;
+    border-radius: 50%;
+}
