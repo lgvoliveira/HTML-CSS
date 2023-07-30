@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; 
+
+            position: relative; /* Todo posicionamento de um box em HTML, por padrão, é relativo */
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; 
+
+            position: absolute; /* Por causa desse posicionamento eu posso configurar as propriedades " left " e " top "  */
+            left: 50%;
+            top: 50%;
+            
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            transform: translate(-50%, -50%); /* Trasformar é mexer em qualquer caixa aplicando algum tipo de transformação nela */
+
+            /* Da linha 22 à linha 30 é o passo a passo para que eu consiga centralizar um elemento horizontalmente e verticalmente */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
