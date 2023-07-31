@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, consequuntur consequatur! Sint similique illo magni voluptatum laboriosam ipsa dolorum ex temporibus ea, quidem numquam sit modi atque, vero quae vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, cupiditate, aliquam enim vitae commodi nulla error molestiae fuga deleniti, perferendis alias repellat ea at voluptatibus facere vero repellendus minus aspernatur?</p>
+
+    <iframe src="pag-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> 
+    <!-- Quando coloco ' sandbox="sandbox" ', ele bloqueia todo e qualquer acesso que outros sites que estejam dentro do iframe tentem fazer -->
+    <!-- Quando eu coloco ' sandbox="allow-same-origin" ', eu permito o acesso a conteúdos de mesma origem (nesse caso ambos tem origem no meu computador) -->
+    <!-- Quando eu coloco ' sandbox="allow-forms" ', eu permito a ação de formulários -->
+    <!-- Quando eu coloco ' sandbox="allow-scripts" ', eu permito a execução de scripts (porque o HTML5 executa scripts quando executa formulários) -->
+
+    <!-- Quando eu coloco ' referrerpolicy="no-referrer" ', eu digo que o conteúdo que está carregado dentro do iframe não vai coletar nenhum tipo de informação do usuário-->
+        <p>Seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae odit numquam non blanditiis voluptatibus cupiditate. Ratione dolores quas dolore. Laboriosam quod molestias laborum quo. Est deserunt dolore vitae placeat possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta earum temporibus ullam est error natus molestiae veniam, iusto rem voluptate vel mollitia reiciendis nulla quos minima dignissimos voluptatum magnam! In!</p>
+</body>
+</html>
