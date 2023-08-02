@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!-- Utilizando "post" pois estou enviando dados sensíveis (senha) -->
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username"> 
+            
+            <!-- Sempre que for obrigatório eu utilizo o " required "-->
+
+            <!-- minlength="" : caracteres mínimos do campo -->
+
+            <!-- maxlength="" : caracteres máximos do campo -->
+
+            <!-- " size " indica quantas letras ele vai mostrar por vez -->
+
+            <!-- placeholder="" : é uma espécie de dica que fica de fundo na caixa -->
+
+            <!-- Se eu coloco o autocomplete no "form" ele só me permite ligar e desligar (on / off). Caso eu coloque dentro do input, ele deixa eu especificar a qual tipo de autocomplete ele vai se referir -->
+
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" placeholder="mínimo 8 letras" autocomplete="current-password">
+            <!-- Nas senhas eu posso usar o "current-password" e o "new-password"-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

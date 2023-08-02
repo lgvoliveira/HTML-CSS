@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> 
+    <!-- Com o ' autocomplete="off" ' eu desligo o autopreenchimento, porém acho que não é legal em um site  --> 
+
+    <!-- Essa " action " envia os dados desse formulário para o script em alguma outra linguagem que eu criei -->
+
+    <!-- "name" é mais útil para o PHP e HTML / "id" é mais útil para o JavaScript e para o uso do "label" -->
+
+    <!-- Devo usar "label" sempre, para relacionar o objeto do formulário e sua etiqueta -->
+
+    <!-- Existem dois métodos para o envio de dados em HTML:
+
+        get(padrão) : os dados aprecem na URL. Eu utilizo esse método quando os dados pedidos não forem sensíveis (nome, peso, idade). Também utilizo quando quero que a URL possa ser compartilhável. Quando eu uso o get eu só posso enviar até 3000 bytes (300 letras). Não utilizar o get para dados sensíveis (senhas, número de cartão de crédito), ou para envios de fotos ou qualquer outro tipo de arquivo que o formulário vá fazer esse tipo de envio.
+
+        post : os dados não aparecem na URL, mas mesmo assim ele não está protegendo os dados do usuário. Utilizar para dados sensíveis (o ideal é trabalhar com https), se eu não quiser que os dados apareçam diretamente na URL, se meus dados tiverem mais de 3000 bytes (3000 letras),se eu quiser fazer envio de arquivos.
+
+        Hoje em dia não existe mais uma diferença de velocidade perceptível entre o envio pelo método get ou post
+    -->
+       <p><label for="inome">Nome:</label>  <!-- Dentro desse "for" eu sempre coloco o id -->
+            <input type="text" name="nome" id="inome">
+        </p>
+       <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+       <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
