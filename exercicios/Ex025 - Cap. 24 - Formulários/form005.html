@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get"></form>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="isxmas" checked value="M"> <label for="isxmas">Masculino</label> <br>
+        <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+
+        <!-- Se eu coloco o mesmo o nome para os inputs do tipo radio eu faço com que apenas um possa ser selecionado. OBS: isso não serve para o input do tipo checkbox. Portanto devo colocar assim! -->
+
+        <!-- Se eu quiser que alguma opção já apareça marcada eu coloco o termo " checked " dentro do input. OBS: serve tanto para input do tipo radio quanto para checkbox -->
+
+        <!-- Devo indicar o valor (value) do input: radio -->
+
+    </fieldset>
+    <fieldset>
+        <legend>Esportes favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+        <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
