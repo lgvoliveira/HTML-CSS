@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Pará</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+
+                <optgroup label="Distrito Federal">
+                    <option value="DF">Brasília</option>
+                </optgroup>
+               
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+
+                <option value="" selected>Selecione<option>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contador</option>
+                <option value="MED">Médico</option>
+                <option value="ADV">Advogado</option>
+                <option value="JU">Juíz</option>
+                <option value="EMP">Empresário</option>
+                <option value="PROF">Professor</option>
+                <option value="POL">Policial</option>
+                <option value="PRO">Promotor</option>
+                <option value="DIP">Diplomata</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROG">Programador</option>
+                <option value="APO">Aposentado</option>
+
+                <!-- Se eu não quiser que apareça o código eu retiro o value e deixo o option normal -->
+
+                <!-- Com esse tipo de lista eu posso digitar caso o que for pedido não esteja sendo mostrado para o que corresponda a minha pessoa e, além disso, enquanto eu vou digitando ele vai sugerindo as opções que se parecem -->
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!-- Não existe máximo de linhas ou colunas, ali eu apenas indico quantas vão aparecer na tela -->
+
+            <!-- Quando eu utilizar a textarea é melhor utilizar o método post, para que eu não tenha problema de limitação no envio das mensagens -->
+        </p>
+    
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
